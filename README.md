@@ -1,6 +1,6 @@
 # :electric_plug: Kubernete-OpenAI-API-App
 Kubernetes para implementar y administrar una aplicación que utiliza la API de OpenAI + Idea de automatización de autopago.
-39.
+
 ChatGPT es un modelo de lenguaje entrenado por OpenAI que se puede utilizar a través de la API de OpenAI. La API de OpenAI es un servicio en línea que proporciona acceso a diversos modelos de lenguaje y otros recursos de aprendizaje automático de OpenAI.
 
 La disponibilidad del servicio se garantiza a través de medidas de alta disponibilidad, como el uso de múltiples servidores y la replicación de datos para minimizar el tiempo de inactividad en caso de un problema técnico. Además, OpenAI monitorea continuamente el rendimiento y la disponibilidad del servicio para garantizar que funcione de manera óptima.
