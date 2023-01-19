@@ -1,21 +1,21 @@
-# ⚙ Kubernete-OpenAI-API-App
+# :electric_plug: Kubernete-OpenAI-API-App
 Kubernetes para implementar y administrar una aplicación que utiliza la API de OpenAI + Idea de automatización de autopago.
 39.
-:electric_plug: ChatGPT es un modelo de lenguaje entrenado por OpenAI que se puede utilizar a través de la API de OpenAI. La API de OpenAI es un servicio en línea que proporciona acceso a diversos modelos de lenguaje y otros recursos de aprendizaje automático de OpenAI.
+ChatGPT es un modelo de lenguaje entrenado por OpenAI que se puede utilizar a través de la API de OpenAI. La API de OpenAI es un servicio en línea que proporciona acceso a diversos modelos de lenguaje y otros recursos de aprendizaje automático de OpenAI.
 
-:electric_plug: La disponibilidad del servicio se garantiza a través de medidas de alta disponibilidad, como el uso de múltiples servidores y la replicación de datos para minimizar el tiempo de inactividad en caso de un problema técnico. Además, OpenAI monitorea continuamente el rendimiento y la disponibilidad del servicio para garantizar que funcione de manera óptima.
+La disponibilidad del servicio se garantiza a través de medidas de alta disponibilidad, como el uso de múltiples servidores y la replicación de datos para minimizar el tiempo de inactividad en caso de un problema técnico. Además, OpenAI monitorea continuamente el rendimiento y la disponibilidad del servicio para garantizar que funcione de manera óptima.
 
-:electric_plug: En cuanto a la infraestructura utilizada, OpenAI utiliza una combinación de tecnologías y plataformas para proporcionar el servicio de la API. Esto incluye la utilización de servidores en la nube, como Google Cloud Platform y Amazon Web Services, y la utilización de herramientas de gestión de infraestructura como Kubernetes para implementar y administrar el servicio.
+En cuanto a la infraestructura utilizada, OpenAI utiliza una combinación de tecnologías y plataformas para proporcionar el servicio de la API. Esto incluye la utilización de servidores en la nube, como Google Cloud Platform y Amazon Web Services, y la utilización de herramientas de gestión de infraestructura como Kubernetes para implementar y administrar el servicio.
 
 ### :diamond_shape_with_a_dot_inside: Los Kubernetes
 
-:electric_plug: Kubernetes es un sistema de administración de contenedores de código abierto que se utiliza ampliamente para implementar y administrar aplicaciones en la nube. Permite a los desarrolladores empaquetar sus aplicaciones en contenedores, que son unidades de software portátiles que incluyen todo lo necesario para ejecutar una aplicación, incluyendo el código, las bibliotecas y las configuraciones.
+Kubernetes es un sistema de administración de contenedores de código abierto que se utiliza ampliamente para implementar y administrar aplicaciones en la nube. Permite a los desarrolladores empaquetar sus aplicaciones en contenedores, que son unidades de software portátiles que incluyen todo lo necesario para ejecutar una aplicación, incluyendo el código, las bibliotecas y las configuraciones.
 
-:electric_plug: Kubernetes proporciona una serie de herramientas y características para facilitar la implementación y administración de aplicaciones en contenedores. Por ejemplo, permite a los desarrolladores desplegar sus aplicaciones en múltiples servidores de manera sencilla, y proporciona características de escalado automático y balanceo de carga para garantizar que las aplicaciones puedan manejar el tráfico de manera eficiente. También proporciona características de monitorización y supervisión para ayudar a los administradores de sistemas a mantener la disponibilidad y el rendimiento de las aplicaciones.
+Kubernetes proporciona una serie de herramientas y características para facilitar la implementación y administración de aplicaciones en contenedores. Por ejemplo, permite a los desarrolladores desplegar sus aplicaciones en múltiples servidores de manera sencilla, y proporciona características de escalado automático y balanceo de carga para garantizar que las aplicaciones puedan manejar el tráfico de manera eficiente. También proporciona características de monitorización y supervisión para ayudar a los administradores de sistemas a mantener la disponibilidad y el rendimiento de las aplicaciones.
 
-:electric_plug: En un entorno en el que quisiera utilizar Kubernetes para implementar y administrar una aplicación que utiliza la API de OpenAI, podría utilizar un archivo de configuración de Kubernetes llamado "Deployment" para especificar cómo se deben implementar y administrar los contenedores de la aplicación.
+En un entorno en el que quisiera utilizar Kubernetes para implementar y administrar una aplicación que utiliza la API de OpenAI, podría utilizar un archivo de configuración de Kubernetes llamado "Deployment" para especificar cómo se deben implementar y administrar los contenedores de la aplicación.
 
-:electric_plug: Un archivo de Deployment de Kubernetes típicamente incluye información sobre el número de réplicas que se deben ejecutar, el contenedor o los contenedores que se deben utilizar para implementar la aplicación y cualquier otra configuración necesaria para el funcionamiento de la aplicación.
+Un archivo de Deployment de Kubernetes típicamente incluye información sobre el número de réplicas que se deben ejecutar, el contenedor o los contenedores que se deben utilizar para implementar la aplicación y cualquier otra configuración necesaria para el funcionamiento de la aplicación.
 
 A continuación se muestra un ejemplo de un archivo de Deployment de Kubernetes para una aplicación que utiliza la API de OpenAI:
 
@@ -51,11 +51,11 @@ Una vez que se ha creado este archivo de Deployment, se puede utilizar el comand
 
 ## :credit_card: Generar un sistema de autopago de la disponibilidad que consumiria de aws los recursos para alojar esta app.
 
-:electric_plug: Utilizar el servicio de pago de AWS para obtener información sobre los costos y el uso de los recursos de AWS (Material de referencia, no para uso en producción).
+Utilizar el servicio de pago de AWS para obtener información sobre los costos y el uso de los recursos de AWS (Material de referencia, no para uso en producción).
 
-:electric_plug: Para generar un sistema de autopago para la disponibilidad de una aplicación alojada en AWS, puede utilizar la API de pago de AWS junto con una plataforma de desarrollo de aplicaciones basada en JavaScript, como Node.js.
+Para generar un sistema de autopago para la disponibilidad de una aplicación alojada en AWS, puede utilizar la API de pago de AWS junto con una plataforma de desarrollo de aplicaciones basada en JavaScript, como Node.js.
 
-:electric_plug: Una forma de implementar esto sería utilizar una librería de Node.js llamada "aws-sdk" que proporciona acceso a la mayoría de los servicios de AWS a través de su API. Con esta librería, puede utilizar el servicio de pago de AWS para obtener información sobre los costos y el uso de los recursos de AWS, y utilizar esta información para tomar decisiones sobre el pago de los recursos utilizados por su aplicación.
+Una forma de implementar esto sería utilizar una librería de Node.js llamada "aws-sdk" que proporciona acceso a la mayoría de los servicios de AWS a través de su API. Con esta librería, puede utilizar el servicio de pago de AWS para obtener información sobre los costos y el uso de los recursos de AWS, y utilizar esta información para tomar decisiones sobre el pago de los recursos utilizados por su aplicación.
 
 A continuación se muestra un ejemplo de cómo se podría utilizar la librería "aws-sdk" y la API de pago de AWS para implementar un sistema de autopago en JavaScript:
 
