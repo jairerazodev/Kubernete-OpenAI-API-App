@@ -59,52 +59,51 @@ Una forma de implementar esto sería utilizar una librería de Node.js llamada "
 
 A continuación se muestra un ejemplo de cómo se podría utilizar la librería "aws-sdk" y la API de pago de AWS para implementar un sistema de autopago en JavaScript:
 
-    const AWS = require('aws-sdk');
+        const AWS = require('aws-sdk');
 
-    // Configure the SDK with your AWS access key and secret key
-    AWS.config.update({
-      accessKeyId: YOUR_ACCESS_KEY,
-      secretAccessKey: YOUR_SECRET_KEY
-    });
+        // Configure the SDK with your AWS access key and secret key
+        AWS.config.update({
+          accessKeyId: YOUR_ACCESS_KEY,
+          secretAccessKey: YOUR_SECRET_KEY
+        });
 
-    // Create an instance of the AWS.Billing service
-    const billing = new AWS.Billing({apiVersion: '2017-10-15'});
+        // Create an instance of the AWS.Billing service
+        const billing = new AWS.Billing({apiVersion: '2017-10-15'});
 
-    // Define a function to handle the payment process
-    async function payForResources() {
-      // Get the current usage and cost of your AWS resources
-      const usage = await billing.getUsage({
-        TimePeriod: {
-          Start: '2022-01-01',
-          End: '2022-01-31'
-        },
-        Granularity: 'MONTHLY'
-      }).promise();
+        // Define a function to handle the payment process
+        async function payForResources() {
+          // Get the current usage and cost of your AWS resources
+          const usage = await billing.getUsage({
+            TimePeriod: {
+              Start: '2022-01-01',
+              End: '2022-01-31'
+            },
+            Granularity: 'MONTHLY'
+          }).promise();
 
-    console.log(`Total cost: $${usage.TotalCost}`);
+        console.log(`Total cost: $${usage.TotalCost}`);
 
-    // Check if the total cost is above a certain threshold
-    if (usage.TotalCost > 100) {
-      // If it is, pay for the resources using the AWS.Billing.pay service
-      const payment = await billing.pay({
-        Provider: 'AWS',
-        CreditCardNumber: YOUR_CREDIT_CARD_NUMBER,
-        CreditCardType: 'VISA',
-        CreditCardExpirationYear: 2022,
-        CreditCardExpirationMonth: 12,
-        CreditCardVerificationNumber: 123,
-        BillingAddress: '123 Main St.',
-        BillingCity: 'Seattle',
-        BillingState: 'WA',
-        BillingPostalCode: '98101',
-        BillingCountry: 'US'
-      }).promise();
+        // Check if the total cost is above a certain threshold
+        if (usage.TotalCost > 100) {
+          // If it is, pay for the resources using the AWS.Billing.pay service
+          const payment = await billing.pay({
+            Provider: 'AWS',
+            CreditCardNumber: YOUR_CREDIT_CARD_NUMBER,
+            CreditCardType: 'VISA',
+            CreditCardExpirationYear: 2022,
+            CreditCardExpirationMonth: 12,
+            CreditCardVerificationNumber: 123,
+            BillingAddress: '123 Main St.',
+            BillingCity: 'Seattle',
+            BillingState: 'WA',
+            BillingPostalCode: '98101',
+            BillingCountry: 'US'
+          }).promise();
 
-      console.log(`Successfully paid $${payment.Amount} for resources`);
+          console.log(`Successfully paid $${payment.Amount} for resources`);
+        }
     }
-  }
+      // Call the payForResources function to initiate the payment process
+      payForResources();
 
-  // Call the payForResources function to initiate the payment process
-  payForResources();
-
-Este ejemplo utiliza la función "getUsage" de la API de pago de AWS para obtener información sobre el costo y el uso de los recursos de AWS durante un período
+Este ejemplo utiliza la función "getUsage" de la API de pago de AWS para obtener información sobre el costo y el uso de los recursos de AWS durante un período.
